@@ -62,21 +62,21 @@ a { color: inherit; }
 .ruler-strip {
   height: 14px;
   background-image: repeating-linear-gradient(
-    to right,
-    var(--line-ink) 0,
-    var(--line-ink) 1px,
-    transparent 1px,
-    transparent 12px
+	to right,
+	var(--line-ink) 0,
+	var(--line-ink) 1px,
+	transparent 1px,
+	transparent 12px
   );
   background-color: var(--ink);
 }
 .ruler-strip.on-paper {
   background-image: repeating-linear-gradient(
-    to right,
-    var(--line) 0,
-    var(--line) 1px,
-    transparent 1px,
-    transparent 12px
+	to right,
+	var(--line) 0,
+	var(--line) 1px,
+	transparent 1px,
+	transparent 12px
   );
   background-color: var(--paper);
 }
@@ -333,7 +333,7 @@ h1 .accent-text { color: var(--accent); }
 .wf-hero {
   height: 2.5rem;
   background: repeating-linear-gradient(
-    45deg, var(--line) 0, var(--line) 4px, transparent 4px, transparent 8px
+	45deg, var(--line) 0, var(--line) 4px, transparent 4px, transparent 8px
   );
   margin-bottom: 0.6rem;
 }
@@ -445,26 +445,26 @@ footer p { margin: 0.4rem 0; }
 
 /* ---------- responsive: tablet+ ---------- */
 @media (min-width: 640px) {
-  .header-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav[aria-label="Navegação principal"] {
-    display: flex;
-    gap: 1.25rem;
-  }
-  .blueprint-grid { grid-template-columns: repeat(2, 1fr); }
-  .spec-row { grid-template-columns: 12rem 1fr; align-items: baseline; }
-  .timeline { grid-template-columns: repeat(2, 1fr); column-gap: 2.5rem; }
-}
+	.header-inner {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav[aria-label="Navegação principal"] {
+		display: flex;
+		gap: 1.25rem;
+	}
+	.blueprint-grid { grid-template-columns: repeat(2, 1fr); }
+	.spec-row { grid-template-columns: 12rem 1fr; align-items: baseline; }
+	.timeline { grid-template-columns: repeat(2, 1fr); column-gap: 2.5rem; }
+	}
 
-@media (min-width: 960px) {
-  .hero-inner {
-    grid-template-columns: 1.4fr 1fr;
-    align-items: end;
-  }
-  .hero-side { align-items: flex-start; padding-bottom: 0.5rem; }
-  .blueprint-grid { grid-template-columns: repeat(3, 1fr); }
-  .timeline { grid-template-columns: repeat(4, 1fr); }
-}
+	@media (min-width: 960px) {
+	.hero-inner {
+		grid-template-columns: 1.4fr 1fr;
+		align-items: end;
+	}
+	.hero-side { align-items: flex-start; padding-bottom: 0.5rem; }
+	.blueprint-grid { grid-template-columns: repeat(3, 1fr); }
+	.timeline { grid-template-columns: repeat(4, 1fr); }
+	}
